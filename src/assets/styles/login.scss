@@ -1,0 +1,100 @@
+
+.getStarted-content {
+  width: 850px;
+  margin: 0 auto;
+
+  .get-started-button {
+    text-align: center;
+    .top-get-started-title {
+      font-size: 30px;
+    }
+    button {
+      cursor: pointer;
+      background-color: #e91e63;
+      padding: 1em 3em 1em 3em;
+      border-radius: 3px;
+      text-align: center;
+      border: none;
+      color: white;
+      font-size: 15px;
+      width: 619.5px;
+    }
+
+    button:focus {
+      visibility: hidden;
+    }
+
+    button:hover {
+      background-color: #c00b48;
+    }
+  }
+
+  .get-started-form, .login-form {
+    margin: 1em auto;
+    background-color: #FFF;
+    border-radius: 3px;
+    width: 550px;
+    padding: 2em;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.329);
+    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.329);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.329);
+
+    ul {
+      list-style-type: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      li {
+        width: 40%;
+        margin: 0 3em 1em 0;
+
+        input {
+          height: 40px;
+          width: 220px;
+          background: transparent;
+          border: none;
+          border-bottom: .5px solid #bebebe;
+          padding: 0;
+          margin: 0;
+          outline: none;
+          
+        }
+      }
+    }
+    .select-account-type {
+      color: #5c5b5b;
+      outline: none;
+    }
+
+    .login-instead {
+      padding: 0 0 2em 0;
+      color: #383838;
+      text-align: center;
+      font-size: 10px;
+    }
+    .login-instead a, .back-home a {
+      color: #0075ac;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 0 .5em ;
+    }
+    .back-home {
+      color: #383838;
+      text-align: center;
+      font-size: 14px;
+      i {
+        padding: 0 .2em;
+      }
+    }
+    .back-home a {
+      color: #bebebe;
+    }
+    .back-home:hover, .back-home a:hover {
+      color: #c00b48;
+      i {
+        color: #c00b48;
+      }
+    }
+  }
+}

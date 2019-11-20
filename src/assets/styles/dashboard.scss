@@ -1,0 +1,107 @@
+.dashboard-content {
+  .user-profile {
+    padding: 1em 2em;
+
+    ul {
+      list-style-type: none;
+      display: flex;
+      justify-content: space-between;
+      margin: 0;
+      padding: 0;
+
+      li {
+        i {
+          color: white;
+        }
+
+        .profile-image {
+          display: flex;
+
+          .user-details {
+            display: flex;
+            flex-direction: column;
+            text-align: end;
+            margin: 0 2em;
+
+            .name {
+              font-size: 20px;
+              text-transform: capitalize;
+              color: white;
+            }
+
+            p.username {
+              font-size: 15px;
+              margin: -20px 0 0 0px;
+              padding: 0;
+              font-style: italic;
+              color: #e6e6e6;
+            }
+
+            p.account-type,
+            p.movies-watched {
+              font-size: 10px;
+              margin: 0;
+              color: #ced7fd;
+            }
+          }
+
+          img {
+            margin: 0;
+            padding: 0;
+            height: 85px;
+            width: 85px;
+            object-fit: cover;
+            border-radius: 200px;
+            border: 1px solid white;
+            padding: 3px 5px;
+            -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.329);
+            -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.329);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.329);
+          }
+        }
+      }
+    }
+  }
+
+  .history {
+    .history-container {
+      height: 430px;
+      overflow: auto;
+    }
+
+  }
+
+}
+
+
+@media all and (max-width: 1024px) and (min-width: 768px) {
+  .container {
+    .dashboard-content {
+      width: 600px;
+    }
+
+    .language-content {
+      width: 600px;
+    }
+  }
+}
+
+@media all and (max-width: 425px) and (min-width: 320px) {
+  .container {
+    .dashboard-content {
+      width: 250px;
+
+      .user-profile {
+        padding: 0;
+      }
+    }
+    .language-content {
+      width: 250px;
+      .language-categories {
+        padding-top: 1em;
+      }
+    }
+
+  }
+
+}
